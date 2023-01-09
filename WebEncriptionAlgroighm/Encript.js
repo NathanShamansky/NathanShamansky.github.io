@@ -8,4 +8,4 @@ function encrypt(text, key) {
   
   // Convert encrypted array back to string and return it
   return encryptedArr.map(char => String.fromCharCode(char)).join('');
-  }
+}
