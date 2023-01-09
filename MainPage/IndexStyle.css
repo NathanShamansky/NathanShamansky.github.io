@@ -1,0 +1,203 @@
+/* Add a border and some padding to the header to make it stand out */
+header {
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    opacity: 1;
+  }
+  .header-container {
+position: relative; /* Set the position to relative to allow absolute positioning of the pseudo-element */
+}
+
+/* Add the pseudo-element to the container element */
+.header-container::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.15); /* Make the background color grey with an opacity of 0.5 */
+z-index: -1; /* Set the z-index to -1 to make sure the pseudo-element is behind the header content */
+}
+
+
+/* Update the header element to be a child of the container element */
+.header-container header {
+border: 2px solid #333;
+padding: 20px;
+text-align: center;
+opacity: 1;
+}
+  
+
+
+
+
+  body {
+    font-family: 'Italianno', sans-serif;
+    background-image: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* Use the 'Italianno' font for headings */
+  h1, h2 {
+    font-family: 'Italianno', serif;
+  }
+
+  /* Use the 'Italianno' font for links */
+  a {
+    color: #333;
+    font-family: 'Italianno', sans-serif;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  a:hover {
+    color: #777;
+  }
+
+  /* Add some styling to the main content section */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Add some styling to the list items */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 10px;
+    font-style: italic;
+  }
+
+  /* Add a border and some padding to the footer to make it stand out */
+  footer {
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Add some styling to the social media images */
+  .SocialMediaImages img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px;
+  }
+  .BlueColor {
+    color: blue;
+  }
+  
+  .ScaleUp{
+  font-size: 1.2em; 
+  transform: scale(1.2);
+  }
+
+
+  svg {
+    cursor: pointer;
+  }
+  #H,
+  #o,
+  #m,
+  #e,#ace,#breezy,#olivia,#umber,#terrance,#Cordelia, #Octavia, #Norah, #Tessa, #Aria, #Calantha, #Tahlia{
+      fill: darkblue;
+      opacity: 0.75;
+      transition: all 1s ease;
+      margin: 0% 10% 0% 0%;
+  }
+  svg:hover #H {
+    transform: translateY(5%);
+    opacity: 1;
+    fill: black;
+  }
+  svg:hover #o {
+    transform: translateY(-5%);
+    opacity: 1;
+    fill: black;
+  }
+  svg:hover #m {
+    transform: translateY(5%);
+    opacity: 1;
+    fill: black;
+  }
+  svg:hover #e {
+    transform: translateY(-5%);
+    opacity: 1;
+    fill: black;
+  }
+  svg:hover #ace {
+    transform: translateY(-5%);
+    opacity: 1;
+    fill: black;
+  }
+  svg:hover #breezy {
+    transform: translateY(5%);
+    opacity: 1;
+    fill: black;
+  }
+  svg:hover #olivia {
+    transform: translateY(-5%);
+    opacity: 1;
+    fill: black;
+  }
+  svg:hover #umber {
+    transform: translateY(5%);
+    opacity: 1;
+    fill: black;
+  }
+  svg:hover #terrance {
+    transform: translateY(-5%);
+    opacity: 1;
+    fill: black;
+  }
+  svg:hover #Cordelia {
+    transform: translateY(5%);
+    opacity: 1;
+    fill: black;
+  }
+
+  svg:hover #Octavia {
+    transform: translateY(-5%);
+    opacity: 1;
+    fill: black;
+  }
+      
+  svg:hover #Norah {
+    transform: translateY(5%);
+    opacity: 1;
+    fill: black;
+  }
+      
+  svg:hover #Tessa {
+    transform: translateY(-5%);
+    opacity: 1;
+    fill: black;
+  }
+      
+  svg:hover #Aria {
+    transform: translateY(5%);
+    opacity: 1;
+    fill: black;
+  }
+      
+  svg:hover #Calantha {
+    transform: translateY(-5%);
+    opacity: 1;
+    fill: black;
+  }
+      
+  svg:hover #Tahlia {
+    transform: translateY(5%);
+    opacity: 1;
+    fill: black;
+  }
