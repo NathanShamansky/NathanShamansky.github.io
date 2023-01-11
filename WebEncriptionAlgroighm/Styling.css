@@ -6,7 +6,7 @@ body {
   }
   
   #container {
-    width: 500px;
+    width: 50%;
     margin: 0 auto;
   }
   
@@ -75,7 +75,7 @@ body {
     color: #fff;
   }
   #result {
-    width:500px;
+    width: 100%;
     margin-top: 50px;
     font-size: 1.5em;
     text-shadow: 2px 2px 4px #000;
