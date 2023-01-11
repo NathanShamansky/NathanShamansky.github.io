@@ -1,0 +1,68 @@
+body {
+    background-color: #C0C0C0;
+}
+
+
+
+
+/* Display */
+.display {
+    font-family: 'Digital', sans-serif;
+    color: #363636;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: right;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0px 10%;
+    width: 70px;
+    height: 70px;
+
+}
+
+/* Number Buttons */
+.num-btn {
+    background-color: #F5F5F5;
+    color: #363636;
+}
+
+/* Operator Buttons */
+.op-btn {
+    background-color: #FDB813;
+    color: #FFFFFF;
+}
+
+/* Random Buttons */
+.rd-btn {
+    background-color: gray;
+    color: #FFFFFF;
+}
+
+/* Equals Button */
+.equals-btn {
+    background-color: #FDB813;
+    color: #FFFFFF;
+    width: 100%;
+    height: 150px;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+/* Clear Button */
+.clear-btn {
+    background-color: #F44336;
+    color: #FFFFFF;
+}
+
+.leftText{
+    text-align: center;
+}
