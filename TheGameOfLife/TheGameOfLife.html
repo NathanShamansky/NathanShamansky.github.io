@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="TheGameOfLife.css">
+  </head>
+  <body>
+    <h1>Encryption/Decryption Algorithm</h1>
+    <div>
+        <p>Simulation Speed (milliseconds between tics): </p>
+        <input id="SimSpeedSlider" type="range" max="2000" min="1">
+        <br>
+        <input type="number" max="2000" min="1" id="SimSpeedText"></input>
+    </div>
+    <br>
+    <button id="start-button">Start</button>
+    <button id="clear-button">Clear</button>
+    <button id="randomize-button">Randomize</button>
+    <br>
+    <table class="table" id="grid">
+    </table>
+  </body>
+</html>
+<script src="TheGameOfLife.js"></script>
