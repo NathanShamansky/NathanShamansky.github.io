@@ -1,0 +1,134 @@
+body{
+    font-family: monospace;
+    background: linear-gradient(#006400, #7aa57a);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+h1{
+    color: rgb(19, 19, 19);
+}
+p{
+    color: rgb(19, 19, 19);
+}
+
+#card-container {
+    margin: 0 auto;
+    align-self: center;
+    max-width: 60%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}    
+  
+#card {
+    flex: auto;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    max-width: 100%;
+    height:auto;
+    transition: all .5s linear;
+    max-height: 50vh;
+}
+
+.LockCard {
+    opacity: 1;
+    flex: auto;
+    justify-self: center;
+    align-self: center;
+    position: relative;
+    background-image: url("Images/Lock.png");
+    background-color: lightgreen;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: wheat;
+    transition: all .5s linear
+
+}
+
+.RedBG{
+    box-shadow: red 0 0px 10px;
+    border-radius: 100px;
+    background-color: rgba(255, 0, 0, 0.3);
+
+}
+
+.DeleatCard{
+    transition: all 1s ease-in-out;
+    animation: Despawn 1s ease-in-out;
+}
+@keyframes Despawn{
+    0%{
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    100%{
+        top: 50px;
+        left: 25px;
+        opacity: 0.01;
+    }
+}
+
+.SpawnCard{
+    transition: all 1s ease-in-out forwards;
+    animation: Spawn 1s ease-in-out forwards;
+}
+
+@keyframes Spawn{
+    0%{
+        top: -50px;
+        left: -25px;
+        opacity: 0.01;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+.ReRoll{
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px;
+    color: green;
+    background: linear-gradient(to top,rgb(0, 179, 0),lightgreen);
+    cursor: pointer;
+    padding: 7px 20px;
+    text-align: center;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    touch-action: manipulation;
+    margin-bottom: 10px;
+}
+.ReRoll:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+.ReRoll:active{
+    background: linear-gradient(to top, rgba(0, 179, 0, 0.452), rgba(144, 238, 144, 0.466));
+}
+
+#NumberOfCardsInput{
+    border-radius: 10px;
+    width: 10%;
+}
+
+#SaveIDInput{
+    border-radius: 10px;
+}
