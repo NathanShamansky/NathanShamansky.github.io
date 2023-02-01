@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Grade</title>
+    <link rel="stylesheet" href="CalculateGrade.css">
+</head>
+
+<body>
+    <form class="Holderform" onsubmit="return false;">
+        <h1 contenteditable="true">Calculate Grade</h1>
+
+        <div id="Inputs">
+            <div class="shadow"></div>
+            <h2 style="padding: 0%;">Enter Data</h2>
+            <input style="width: 50%;" type="text" id="InputName" placeholder="Name:">
+            <br>
+            <br>
+            <input style="width: 50%;" type="number" id="InputPercentage" min="0" max="100" placeholder="Current Grade: ">
+            <br>
+            <br>
+            <input style="width: 50%;" type="number" id="InputBias" min="0" max="100" placeholder="Weighting Of Section (What precent of final grade)">
+            <br>
+            <br>
+
+            <button type="button" id="AddButton" onclick="addSection()">Add Section </button>
+        </div>
+        <br>
+        <div id="ErrorMessage"></div>
+        <br>
+        <br>
+        <label id="GradeOutput">Final Grade: <span id="finalGrade"></span></label>
+        <button type="button" id="EditButton">Edit </button>
+        <div id="sections">
+
+        </div>
+    </form>
+
+
+</body>
+
+</html>
+<script src="CalculateGrade.js"></script>
