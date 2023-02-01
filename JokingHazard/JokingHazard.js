@@ -47,20 +47,28 @@ function ReRoll()
         }
     }
 }
-function GetCard(index, currentCad){
+function GetCard(index, currentCad) {
     CanUpdate = false;
     SaveIds[index] = currentCad;
     Cards[index].classList.add("DeleatCard");
     setTimeout(function() {
-        Cards[index].src = "Images/Cards/image" + currentCad + ".jpg";
-        Cards[index].alt = "Images/Cards/image" + currentCad + ".jpg";
-        Cards[index].classList.remove("DeleatCard");
-        Cards[index].classList.add("SpawnCard");
-        setTimeout(function() {
-            Cards[index].classList.remove("SpawnCard")
-            CanUpdate = true;
-        }, 1100);    
-    }, 900);    
+      Cards[index].src = "Images/Cards/image" + currentCad + ".jpg";
+      Cards[index].alt = "Images/Cards/image" + currentCad + ".jpg";
+      Cards[index].classList.remove("DeleatCard");
+      Cards[index].classList.add("SpawnCard");
+
+      var startTime = new Date().getTime();
+      var image = new Image();
+      image.src = Cards[index].src;
+
+      var waitForLoad = setInterval(function() {
+        if (image.complete && (new Date().getTime() - startTime) > 1000) {
+          clearInterval(waitForLoad);
+          Cards[index].classList.remove("SpawnCard");
+          CanUpdate = true;
+        }
+      }, 50);
+    }, 900);
 }
 
 
