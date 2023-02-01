@@ -1,6 +1,6 @@
 let Cards = document.querySelectorAll("#card")
 let LockCards = document.querySelectorAll(".LockCard")
-let LockedCards = [false, false, false]
+let LockedCards = [false,false,false]
 let CanUpdate = true;
 let SaveIds = [];
 let CardSelecters = [261, 448]
@@ -11,7 +11,7 @@ function Start()
     for (let index = 0; index < LockCards.length; index++) {
         LockCards[index].style.backgroundColor = "lightgreen";
     }
-
+    LockedCards = [];
     for (let index = 0; index < Cards.length; index++) {
         LockedCards.push(false);
     }
@@ -90,6 +90,7 @@ document.getElementById("NumberOfCardsInput").addEventListener("change", functio
 });
 
 function RedoSize(length){
+    LockedCards = [];
     for (let index = 0; index < length; index++) {
         LockedCards.push(false);
     }
