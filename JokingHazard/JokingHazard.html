@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joking Hazard</title>
+    <link rel="stylesheet" href="JokingHazard.css">
+</head>
+<body onload="ReRoll(); Start()">
+    <h1>Joking Hazard</h1>
+    <br>
+    <div style="grid-template-columns: repeat(3,1fr);" id="card-container">
+        <button style="background-color: lightgreen;" class="LockCard" onclick="LockCard(0)"></button>
+        <button style="background-color: lightgreen;" class="LockCard" onclick="LockCard(1)"></button>
+        <button style="background-color: lightgreen;" class="LockCard" onclick="LockCard(2)"></button>
+        <img id="card" src="" alt="card 1">
+        <img id="card" src="" alt="card 2">
+        <img id="card" src="" alt="card 3">
+    </div>
+
+    <br>
+    <button class="ReRoll" onclick="ReRoll()">Re-Roll</button>
+    <br>
+    <input placeholder="Number Of Cards" type="number" min="1" max="5" id="NumberOfCardsInput">
+    <p id="SaveID"></p>
+    <input type="text" placeholder="Enter Save Id" id="SaveIDInput">
+    <p>(Yes, verry creative)</p>
+    <br>
+    <p>Include Low Quality Cards (not recomended):</p>
+    <input type="checkbox" id="CardSelectedCheckBox">
+    
+    
+      
+</body>
+</html>
+<script src="JokingHazard.js"></script>
