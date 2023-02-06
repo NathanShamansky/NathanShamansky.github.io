@@ -119,7 +119,7 @@ function RedoSize(length){
         var img = document.createElement("img");
         img.id = "card";
         img.src = getImage(Math.floor(Math.random() * CardSelecters[CardSelected]));
-        img.alt = "card " + (index + 1);
+        img.alt = Math.floor(Math.random() * CardSelecters[CardSelected]);
         document.getElementById("card-container").appendChild(img);
         console.log("3");
     }
@@ -138,7 +138,7 @@ document.getElementById("SaveIDInput").addEventListener("change", function(event
     RedoSize(result.length);
     for (let index = 0; index < result.length; index++) {
         const element = result[index];
-        Cards[index].src = getImage(element);
+        Cards[index].src = getImage(element - 100);
     }
 });
 
