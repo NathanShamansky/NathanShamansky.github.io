@@ -42,7 +42,7 @@ function ReRoll()
         }
         document.getElementById("SaveID").textContent = "This Save ID = ";
         for (let index = 0; index < SaveIds.length; index++) {
-            const element = SaveIds[index];
+            const element = SaveIds[index] + 100;
             if(index == 0){
                 document.getElementById("SaveID").textContent = document.getElementById("SaveID").textContent + element;
             }else {
