@@ -102,3 +102,10 @@ button:disabled {
     top: -20px;
     background-color: transparent;
 }
+.ErrorMessage{
+    color: red;
+    background-color: transparent;
+    margin: 20px auto;
+    max-width: 70%;
+    text-align: center;
+}
