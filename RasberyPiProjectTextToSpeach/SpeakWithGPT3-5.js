@@ -66,7 +66,7 @@ function stopRecognition() {
 
 async function getAssistantResponse(userMessage) {
   // Replace with your OpenAI API key
-  const apiKey = "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";
+  const apiKey = "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 ";
   const url = "https://api.openai.com/v1/chat/completions";
   const headers = {
     "Content-Type": "application/json",
