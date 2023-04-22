@@ -5,8 +5,6 @@ const messagesList = document.getElementById("messages");
 let recognition;
 let messages = [];
 let TotalUsedTokens = 0;
-let firsthalfkey = "sk-vt8zjbC4lHPET4UhIPWqT3";
-let secondhalfkey = "BlbkFJe36SIIDABOMEfO0oekEq";
 
 let isAssistantSpeaking = false;
 
@@ -74,7 +72,8 @@ function stopRecognition() {
 
 async function getAssistantResponse(userMessage) {
     // Replace with your OpenAI API key
-    const apiKey = firsthalfkey + secondhalfkey;
+    const apiKey = document.getElementById("ApiKeyInput").value;
+    console.log(document.getElementsByClassName("ApiKeyInput").value);
     const url = "https://api.openai.com/v1/chat/completions";
     const headers = {
         "Content-Type": "application/json",
