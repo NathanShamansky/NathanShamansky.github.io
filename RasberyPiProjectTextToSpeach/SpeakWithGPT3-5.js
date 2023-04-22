@@ -144,4 +144,4 @@ function displayMessage(message) {
     listItem.appendChild(senderDiv);
     messagesList.appendChild(listItem);
 
-}
+} 
