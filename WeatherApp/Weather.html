@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Weather.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Weather App</title>
+</head>
+
+<body onload="GetRandomWeather()">
+  <h1>Weather App</h1>
+  <div class="container">
+    <div class="card">
+        <img class="Background" src="" alt="">
+        <div class="locationParent locationParentHiden">
+            <select id="countrySelect" class="selectInput">
+              <option value="">Select Country</option>
+            </select>
+            <input type="text" id="countryInput" class="textInput" oninput="handleInput()">
+            <ul id="suggestionList"></ul>
+            <div>Include Images Of City:</div>
+            <input type="checkbox" name="" id="CanShowImagesCheckbox">
+            <br>
+            <button id="getWeatherBtn" style="margin-top: 10px;">Get Weather</button>
+          </div>
+        <h2 class="LocationText"></h2>
+        <img id="weatherIcon" src="" alt="">
+        <i class="fa fa-map-marker" onclick="ShowHideLocation()" style="position: absolute; top: 10px; left: 10px;font-size:24px; z-index: 10;"></i>
+          
+          <img class="OpenAiButton" onclick="ShowHideOpenAi()" src="Images/OpenAiLogo.svg"><h4 style="position: absolute; left: 35px; bottom: -3px; color: gray;">What Should I Do Here?<small>(gpt 3.5 turbo)</small></h4></img>
+      <div id="weatherContainer">
+        <p id="weatherDescription"></p>
+        <p id="temperature"></p>
+      </div>
+      <div class="OpenAiTextBox OpenAiTextBoxHiden">
+          <ol class="OpenAiOL" style="text-align: left;">
+        </ol>
+      </div>
+      <script src="Weather.js"></script>
+      <script src="OpenaiTest.js"></script>
+    </div>
+  </div>
+</body>
+</html>
