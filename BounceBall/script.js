@@ -163,3 +163,6 @@ canvas.addEventListener('touchmove', drag);
 canvas.addEventListener('touchend', endDrag);
 
 animate();
+document.addEventListener('touchmove', (e) => {
+  e.preventDefault();
+}, { passive: false });
