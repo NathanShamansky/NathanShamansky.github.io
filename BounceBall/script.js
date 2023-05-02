@@ -33,7 +33,7 @@ class Particle {
   }
   
   const ballImg = new Image();
-  ballImg.src = 'Images/ball.png';
+  ballImg.src = 'Images/ball.png'; 
 
 const friction = 0.99;
 const maxVelocity = 100;
