@@ -9,7 +9,7 @@ body, html {
     display: block;
     background-color: #f0f0f0;
 }
-body {
+*, body, canvas {
   position: fixed;
   overflow: hidden;
   width: 100%;
